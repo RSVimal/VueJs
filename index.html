@@ -2,13 +2,21 @@
 <div id="app">
     <p>{{title}}</p>
     <input type="text" v-on:input="changetitle">
+
+    <!--String Interpolation-->
+    <p>{{ welcome}}</p>
+
+    <!--Binding-->
+    <a :href="mylink">Go To My Page</a>
 </div>
 <script>
     new Vue
     ({
         el:'#app',
         data:{
-            title:"ho"
+            title:"ho",
+            welcome:"Hi Bro",
+            mylink:"https://rsvimal.netlify.com"
         },
         methods:{
             changetitle:function(event)
