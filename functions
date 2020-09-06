@@ -1,1 +1,3 @@
 v-once - only one time value is rendered it cannot be reassigned
+v-bind - used to bind data
+v-html - used to render html code
