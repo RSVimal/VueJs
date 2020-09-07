@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+    <p>{{title}}</p>
+    <p>{{count}}</p>
+    <p>{{count>10?'Count greater than 10':'Count less than 10'}}</p>
+
+    <!--Increase count using inline javaScript-->
+    <button v-on:click="count++">Add Count</button>
+    
+</div>
+<script>
+    new Vue
+    ({
+        el:'#app',
+        data:{
+            title:"Event Listener",
+            count:0
+        },
+        methods:{
+        }
+
+    })
+</script>
