@@ -1,6 +1,11 @@
 v-once - only one time value is rendered it cannot be reassigned
+
 v-bind - used to bind data
+
 v-html - used to render html code
+
 v-on - Event listener eg:v-on:click="function"
+
 event.stopPropagation() - prevents further propagation of the current event in the capturing and bubbling phases
 eg:- we can also use like the following <p v-mouseover.stop=""></p>
+Reference link - https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
