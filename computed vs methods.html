@@ -1,0 +1,32 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+    <p>{{count}}</p>
+    <button v-on:click="increase">Add Count</button>
+    <p>{{result()}}|{{computedresult}}</p>
+</div>
+<script>
+    new Vue
+    ({
+        el:'#app',
+        data:{
+            count:0
+        },
+        computed:{
+            computedresult:function()
+            {
+                return this.count>5?'greater than 5':'less than 5';
+            }
+        },
+        methods:{
+            increase:function()
+            {
+                this.count++
+            },
+            result:function()
+            {
+                return this.count>5?'greater than 5':'less than 5';
+            }
+        }
+
+    })
+</script>
